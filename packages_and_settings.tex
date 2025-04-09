@@ -23,6 +23,7 @@
 \captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
 
 \usepackage{ulem} %更好的下划线
+\usepackage{xeCJKfntef} % 适配中文自动换行的下划线
 
 \usepackage[ top=2.5cm, bottom=2.0cm, left=3.0cm, right=2.5cm]{geometry} %设置页边距
 
@@ -54,10 +55,10 @@
 
 \usepackage{fancyhdr}               %
 \renewcommand{\headrulewidth}{0.4pt}  %
-%\pagestyle{fancy}%
-\rhead{\TitleCHS}
-\lhead{华东师范大学本科毕业论文} 
-\chead{}                            %设置页眉页脚
+\pagestyle{fancy}
+\lhead{} 
+\chead{\TitleCHS}                            %设置页眉页脚
+\rhead{}
 \lfoot{}                            %
 \zihao{-5}\cfoot{\thepage}                            %
 \rfoot{}                    %
