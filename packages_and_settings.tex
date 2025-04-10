@@ -19,6 +19,7 @@
 \usepackage{algorithm} % 伪代码相关
 \usepackage{algorithmic} % 伪代码相关
 \usepackage{abstract} % 清除摘要的默认格式
+\usepackage{chngcntr}
 
 \usepackage{titletoc}\contentsmargin{0pt}\renewcommand\contentspage{\thecontentspage}\dottedcontents{section}[1.3em]{}{1.3em}{5pt}\dottedcontents{subsection}[3.5em]{}{2.2em}{5pt}
 
@@ -31,9 +32,9 @@
 % 解决长图名没有居中的问题
 \captionsetup{justification=centering}
 
-% 设置图表的编号格式（e.g. 表4-1）
+% 图表跟随章节编号
 \counterwithin{table}{section}
-\renewcommand{\thetable}{\thesection-\arabic{table}}
+\counterwithin{figure}{section}
 
 \usepackage{ulem} %更好的下划线
 \usepackage{xeCJKfntef} % 适配中文自动换行的下划线
