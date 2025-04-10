@@ -16,6 +16,8 @@
 \usepackage{subcaption}
 \usepackage{bicaption}
 \usepackage{setspace}
+\usepackage{algorithm} % 伪代码相关
+\usepackage{algorithmic} % 伪代码相关
 
 \usepackage{titletoc}\contentsmargin{0pt}\renewcommand\contentspage{\thecontentspage}\dottedcontents{section}[1.3em]{}{1.3em}{5pt}\dottedcontents{subsection}[3.5em]{}{2.2em}{5pt}
 
@@ -25,6 +27,8 @@
 % 英文图表名（去除冒号）
 \captionsetup[figure][bi-second]{name=Figure, labelsep=space}
 \captionsetup[table][bi-second]{name=Table, labelsep=space}
+% 解决长图名没有居中的问题
+\captionsetup{justification=centering}
 
 \usepackage{ulem} %更好的下划线
 \usepackage{xeCJKfntef} % 适配中文自动换行的下划线
