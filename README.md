@@ -2,16 +2,17 @@
 
 ### 华东师范大学本科生毕业论文模板
 
-本模板对[ 袁轶君 ](https://gitee.com/YijunYuan)制作的[华东师范大学本科生毕业论文LaTeX模板](https://gitee.com/YijunYuan/ECNU-Undergraduate-LaTeX)的内封面，目录，摘要页页眉，段落层次格式以及一些字体进行了修改。使之与[2019届本科生毕业论文](./本科生毕业论文（设计）模板-理科.pdf)相符合。
+本模板对[Jarvis-K](https://github.com/Jarvis-K)制作的[华东师范大学2019届本科生毕业论文LaTeX模板](https://github.com/Jarvis-K/ECNU_Latex_Template)的进行了修改。使之与[华东师范大学2025届本科生毕业论文](./本科生毕业论文（设计）模板-理科.pdf)相符合。
 
 ### 结构
 
 本模板的结构如下：
- 
+
 ```
 .\
 |-- preface
 |   |-- inner-cover.tex
+|   |-- commitment.tex
 |   `-- abstract.tex
 |-- body
 |   |-- SectionA.tex
@@ -116,6 +117,7 @@ xelatex main.tex
 是的没错，xelatex指令一共要执行三次。最后的产物就是`main.pdf`。
 
 如果是macos，推荐使用Texpad，如果报错字体缺失，请去相应网站下载字体再使用。
+
 ### 其他
 
 相信使用这份模板的人并不都精通TeX系统，甚至连作者自己也算不上精通，所以有些问题也需要慢慢摸索修改。
@@ -124,6 +126,3 @@ xelatex main.tex
 
 * 我什么都不改，就编译失败了（作者回答：请检查你的toolchain并仔细阅读本README.md）
 * 所有本README.md中已经提到的问题。
-
-
-
