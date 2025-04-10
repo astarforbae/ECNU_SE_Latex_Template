@@ -19,8 +19,12 @@
 
 \usepackage{titletoc}\contentsmargin{0pt}\renewcommand\contentspage{\thecontentspage}\dottedcontents{section}[1.3em]{}{1.3em}{5pt}\dottedcontents{subsection}[3.5em]{}{2.2em}{5pt}
 
-\captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
-\captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
+% 中文图表名（去除冒号）
+\captionsetup[figure][bi-first]{name=图, labelsep=space}
+\captionsetup[table][bi-fist]{name=表, labelsep=space}
+% 英文图表名（去除冒号）
+\captionsetup[figure][bi-second]{name=Figure, labelsep=space}
+\captionsetup[table][bi-second]{name=Table, labelsep=space}
 
 \usepackage{ulem} %更好的下划线
 \usepackage{xeCJKfntef} % 适配中文自动换行的下划线
