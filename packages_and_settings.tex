@@ -31,6 +31,10 @@
 % 解决长图名没有居中的问题
 \captionsetup{justification=centering}
 
+% 设置图表的编号格式（e.g. 表4-1）
+\counterwithin{table}{section}
+\renewcommand{\thetable}{\thesection-\arabic{table}}
+
 \usepackage{ulem} %更好的下划线
 \usepackage{xeCJKfntef} % 适配中文自动换行的下划线
 
